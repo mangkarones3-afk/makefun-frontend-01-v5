@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wispboard — the make.fun board, bounty pages, leaderboards and profiles</title>
+</head>
+<body>
+<main id="view"><p>Loading the live board…</p></main>
+<script type="module">
+import('./app.js').catch(() => {
+  document.getElementById('view').textContent = 'The app could not load. Check the connection and reload.';
+});
+</script>
+</body>
+</html>
